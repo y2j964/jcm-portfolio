@@ -1,9 +1,23 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, useStaticQuery } from "gatsby"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
+  const data = useStaticQuery(graphql`
+    query authorNameQuery {
+      site {
+        siteMetadata {
+          author {
+            name
+          }
+        }
+      }
+    }
+  `)
+
+  const author = data.site.siteMetadata.author.name
+
   let header
 
   if (isRootPath) {
@@ -25,9 +39,7 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        Copyright © {new Date().getFullYear()} {author}. All Rights Reserved
       </footer>
     </div>
   )
