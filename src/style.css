@@ -1,4 +1,8 @@
-/* CSS Custom Properties Definitions */
+/* purgecss start ignore */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+/* purgecss end ignore */
+@import "tailwindcss/utilities";
 
 :root {
   --maxWidth-none: "none";
@@ -173,7 +177,7 @@ ol {
   margin-right: var(--spacing-0);
   padding: var(--spacing-0);
   margin-bottom: var(--spacing-8);
-  list-style-position: outside;
+  /* list-style-position: outside; */
   list-style-image: none;
 }
 
@@ -317,17 +321,4 @@ a:focus {
 
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
-}
-
-/* Media queries */
-
-@media (max-width: 42rem) {
-  blockquote {
-    padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);
-    margin-left: var(--spacing-0);
-  }
-  ul,
-  ol {
-    list-style-position: inside;
-  }
 }
