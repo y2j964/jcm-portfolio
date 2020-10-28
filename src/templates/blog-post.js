@@ -22,14 +22,22 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         itemType="http://schema.org/Article"
       >
         <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <h2 className="blog-post__title" itemProp="headline">
+            {post.frontmatter.title}
+          </h2>
+          <time
+            className="blog-post__date"
+            datetime={new Date(post.frontmatter.date).toISOString()}
+          >
+            {post.frontmatter.date}
+          </time>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
+          className="blog-post__body"
           itemProp="articleBody"
         />
-        <hr />
+        <hr className="partition" />
         <footer>
           <Bio />
         </footer>

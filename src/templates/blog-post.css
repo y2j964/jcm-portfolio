@@ -1,0 +1,70 @@
+.blog-post {
+  &__title {
+    @apply mb-4 mt-0 font-black text-5xl;
+    color: var(--color-heading);
+  }
+
+  &__date {
+    @apply text-xl mb-8 block mt-8;
+    font-family: var(--font-heading);
+  }
+
+  /* for injected markup */
+  &__body p {
+    @apply leading-relaxed mb-8 text-lg;
+    font-family: var(--font-heading);
+  }
+
+  &__body ul,
+  &__body ol {
+    @apply mb-8;
+  }
+
+  &__body li > ul {
+    @apply ml-8 mt-4;
+  }
+
+  &__body ul li,
+  &__body ol li {
+    @apply pl-0 mb-4;
+  }
+
+  &__body li > p {
+    @apply mb-4;
+  }
+  &__body li *:last-child {
+    @apply mb-0;
+  }
+
+  &__body h2,
+  &__body h3,
+  &__body h4,
+  &__body h5,
+  &__body h6 {
+    @apply mt-12 mb-6;
+  }
+
+  &__body h2 {
+    @apply text-3xl;
+  }
+
+  &__body h3 {
+    @apply text-2xl;
+  }
+
+  &__body h4 {
+    @apply text-2xl;
+  }
+
+  &__body h5 {
+    @apply text-xl;
+  }
+
+  &__body h6 {
+    @apply text-xl;
+  }
+
+  &__body a {
+    color: var(--color-primary);
+  }
+}
