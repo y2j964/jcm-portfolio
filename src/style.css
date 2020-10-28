@@ -2,6 +2,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "components/navbar.css";
+@import "components/footer.css";
 @import "templates/blog-post.css";
 /* purgecss end ignore */
 @import "tailwindcss/utilities";

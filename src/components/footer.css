@@ -1,0 +1,11 @@
+.footer {
+  @apply max-w-screen-xl mx-auto px-4 py-6 mt-10;
+
+  @screen sm {
+    @apply px-8;
+  }
+
+  &__copyright {
+    @apply text-center text-sm;
+  }
+}
