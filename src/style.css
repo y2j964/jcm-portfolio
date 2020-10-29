@@ -1,8 +1,9 @@
 /* purgecss start ignore */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
-@import "components/navbar.css";
 @import "components/footer.css";
+@import "components/navbar.css";
+@import "components/PostCard/post-card.css";
 @import "templates/blog-post.css";
 /* purgecss end ignore */
 @import "tailwindcss/utilities";
@@ -83,29 +84,6 @@ blockquote {
   & > ol {
     list-style-position: inside;
   }
-}
-
-/* Custom classes */
-
-.global-header {
-  @apply mb-12;
-}
-
-.post-list-item {
-  @apply mt-12;
-
-  &__title {
-    @apply text-2xl mb-2;
-    color: var(--color-primary);
-  }
-}
-
-.post-list-item p {
-  @apply mb-8;
-}
-
-.post-list-item header {
-  @apply mb-4;
 }
 
 .header-link-home {
