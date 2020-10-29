@@ -1,5 +1,5 @@
 .navbar {
-  @apply flex items-center max-w-6xl mx-auto px-4 py-6;
+  @apply flex w-full items-center max-w-6xl mx-auto px-4 py-6;
 
   @screen sm {
     @apply px-8 py-10;
