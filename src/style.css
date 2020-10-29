@@ -4,7 +4,7 @@
 @import "components/Footer/footer.css";
 @import "components/Navbar/navbar.css";
 @import "components/PostCard/post-card.css";
-@import "templates/BlogPost/blog-post.css";
+@import "templates/blog-post/blog-post.css";
 /* purgecss end ignore */
 @import "tailwindcss/utilities";
 
