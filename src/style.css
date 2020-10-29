@@ -42,6 +42,17 @@ body {
   color: var(--color-text);
 }
 
+#gatsby-focus-wrapper {
+  @apply flex flex-col min-h-screen;
+  /* ensure that viewport height is full, at minimum */
+}
+
+main {
+  @apply w-full;
+  flex: 1 1 auto;
+  /* ensure that footer doesn't creep up the page if there isn't much content within main */
+}
+
 h1,
 h2,
 h3,
