@@ -27,7 +27,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </h2>
           <time
             className="blog-post__date"
-            datetime={new Date(post.frontmatter.date).toISOString()}
+            dateTime={new Date(post.frontmatter.date).toISOString()}
           >
             {post.frontmatter.date}
           </time>
