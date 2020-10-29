@@ -1,10 +1,10 @@
 /* purgecss start ignore */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
-@import "components/footer.css";
-@import "components/navbar.css";
+@import "components/Footer/footer.css";
+@import "components/Navbar/navbar.css";
 @import "components/PostCard/post-card.css";
-@import "templates/blog-post.css";
+@import "templates/BlogPost/blog-post.css";
 /* purgecss end ignore */
 @import "tailwindcss/utilities";
 
