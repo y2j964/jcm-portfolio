@@ -21,7 +21,7 @@ const BlogIndex = ({ data, location }) => {
   const posts = data.allMarkdownRemark.nodes
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout>
       <SEO title="All posts" />
       <Bio />
       {posts.length === 0 ? <BlogPostsNone /> : <PostCards posts={posts} />}
