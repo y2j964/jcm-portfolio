@@ -17,12 +17,11 @@ const BlogPostsNone = () => (
 )
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
   return (
     <Layout>
-      <SEO title="All posts" />
+      <SEO title="All posts" location={location} />
       <Bio />
       {posts.length === 0 ? <BlogPostsNone /> : <PostCards posts={posts} />}
     </Layout>
