@@ -1,7 +1,6 @@
-import React from "react"
-import { Link } from "gatsby"
-import { postCardInterface } from "./types"
-import PropTypes from "prop-types"
+import React from 'react';
+import { Link } from 'gatsby';
+import { postCardInterface } from './types';
 
 const PostCard = ({ title, description, date, slug }) => {
   return (
@@ -24,11 +23,11 @@ const PostCard = ({ title, description, date, slug }) => {
         </p>
       </article>
     </li>
-  )
-}
+  );
+};
 
 PostCard.propTypes = {
   ...postCardInterface,
-}
+};
 
-export default PostCard
+export default PostCard;

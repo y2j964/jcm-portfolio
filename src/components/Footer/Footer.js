@@ -1,8 +1,7 @@
-import React from "react"
-import { useStaticQuery } from "gatsby"
-import PropTypes from "prop-types"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 
-const Footer = props => {
+const Footer = () => {
   const data = useStaticQuery(graphql`
     query authorNameQuery {
       site {
@@ -13,9 +12,9 @@ const Footer = props => {
         }
       }
     }
-  `)
+  `);
 
-  const author = data.site.siteMetadata.author.name
+  const author = data.site.siteMetadata.author.name;
 
   return (
     <footer className="footer">
@@ -23,9 +22,9 @@ const Footer = props => {
         Copyright © {new Date().getFullYear()} {author}. All Rights Reserved
       </p>
     </footer>
-  )
-}
+  );
+};
 
-Footer.propTypes = {}
+Footer.propTypes = {};
 
-export default Footer
+export default Footer;

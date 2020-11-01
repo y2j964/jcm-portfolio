@@ -1,6 +1,7 @@
-import React from "react"
-import Navbar from "./Navbar/Navbar"
-import Footer from "./Footer/Footer"
+import React from 'react';
+import PropTypes from 'prop-types';
+import Navbar from './Navbar/Navbar';
+import Footer from './Footer/Footer';
 
 const Layout = ({ children }) => {
   return (
@@ -9,7 +10,11 @@ const Layout = ({ children }) => {
       <main className="max-w-3xl mx-auto px-8">{children}</main>
       <Footer />
     </React.Fragment>
-  )
-}
+  );
+};
 
-export default Layout
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export default Layout;

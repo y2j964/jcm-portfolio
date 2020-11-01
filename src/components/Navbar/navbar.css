@@ -16,4 +16,11 @@
       @apply mr-4;
     }
   }
+  &__link {
+    @apply opacity-75;
+
+    &--is-active {
+      @apply opacity-100;
+    }
+  }
 }

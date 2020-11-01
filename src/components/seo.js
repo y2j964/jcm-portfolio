@@ -1,24 +1,16 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
-import React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
-import { siteMetadata } from "../../gatsby-config"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
 
 const SEO = ({
   title,
   isArticle = false,
   location,
-  description = "",
-  imgUrl = "",
-  imgAlt = "",
-  lang = "en",
+  description = '',
+  imgUrl = '',
+  imgAlt = '',
+  lang = 'en',
   meta = [],
 }) => {
   const { site } = useStaticQuery(
@@ -36,11 +28,12 @@ const SEO = ({
         }
       }
     `
-  )
+  );
 
-  const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
-  const { siteUrl } = site.siteMetadata
+  const metaDescription = description || site.siteMetadata.description;
+  const defaultTitle = site.siteMetadata?.title;
+  const { siteUrl } = site.siteMetadata;
+
   const metaProps = [
     {
       name: `description`,
@@ -78,7 +71,7 @@ const SEO = ({
       name: `twitter:description`,
       content: metaDescription,
     },
-  ]
+  ];
 
   if (isArticle) {
     const additionalMetaProps = [
@@ -88,14 +81,14 @@ const SEO = ({
       },
       {
         name: `twitter:image:alt`,
-        content: imgAlt || "",
+        content: imgAlt || '',
       },
       {
         property: `og:image`,
-        content: imgUrl || "",
+        content: imgUrl || '',
       },
-    ]
-    metaProps.push(...additionalMetaProps)
+    ];
+    metaProps.push(...additionalMetaProps);
   }
 
   return (
@@ -107,17 +100,18 @@ const SEO = ({
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={metaProps.concat(meta)}
     />
-  )
-}
+  );
+};
 
 SEO.propTypes = {
   title: PropTypes.string.isRequired,
   isArticle: PropTypes.bool,
   description: PropTypes.string,
+  location: PropTypes.object,
   imgUrl: PropTypes.string,
   imgAlt: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-}
+};
 
-export default SEO
+export default SEO;

@@ -1,18 +1,18 @@
 /* purgecss start ignore */
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "components/Footer/footer.css";
-@import "components/Navbar/navbar.css";
-@import "components/PostCard/post-card.css";
-@import "templates/blog-post/blog-post.css";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'components/Footer/footer.css';
+@import 'components/Navbar/navbar.css';
+@import 'components/PostCard/post-card.css';
+@import 'templates/blog-post/blog-post.css';
 /* purgecss end ignore */
-@import "tailwindcss/utilities";
+@import 'tailwindcss/utilities';
 
 :root {
   --fontFamily-sans: Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --fontFamily-serif: 'Merriweather', 'Georgia', Cambria, 'Times New Roman',
     Times, serif;
   --font-body: var(--fontFamily-serif);
   --font-heading: var(--fontFamily-sans);
