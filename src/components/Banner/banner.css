@@ -1,0 +1,47 @@
+.banner {
+  @apply flex mx-auto py-16 rounded-xl overflow-hidden;
+  /* background-color: #837277; */
+  background-color: #fff5a2;
+
+  @screen sm {
+    /* we want the banner to match up with the navbar;
+    4rem represents the padding of the navbar */
+    width: calc(100% - 4rem);
+    max-width: 68rem;
+  }
+
+  @screen md {
+    @apply py-20;
+  }
+
+  &__title {
+    @apply text-4xl w-1/2 text-center capitalize flex items-center justify-center;
+    filter: blur(0.3px);
+    /* color: #edebec; */
+    /* text-shadow: 0 0 6px #edebec; */
+    /* color: #f4f4f4; */
+    color: #fffefe;
+    text-shadow: 0 0 3px #a7909b;
+    /* text-shadow: 0 0 3px #95818a; */
+    transform: rotate(45deg);
+
+    @screen sm {
+      @apply text-5xl;
+    }
+  }
+}
+
+.logo-wrapper {
+  @apply flex justify-center w-1/2;
+  .gatsby-image-wrapper {
+    width: 200px;
+
+    @screen sm {
+      width: 250px;
+    }
+
+    @screen lg {
+      width: 270px;
+    }
+  }
+}

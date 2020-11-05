@@ -1,8 +1,9 @@
 .navbar {
-  @apply flex w-full items-center max-w-6xl mx-auto px-4 py-6;
+  @apply flex w-full items-center max-w-6xl mx-auto px-4 py-5;
+  /* background-color: var(--color-black); */
 
   @screen sm {
-    @apply px-8 py-10;
+    @apply px-8 py-6;
   }
 
   &-secondary-group {
@@ -17,10 +18,10 @@
     }
   }
   &__link {
-    @apply opacity-75;
+    /* @apply opacity-75; */
 
     &--is-active {
-      @apply opacity-100;
+      /* @apply opacity-100; */
     }
   }
 }
