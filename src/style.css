@@ -23,11 +23,13 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem; */
-  --color-primary: #005b99;
-  --color-text: #2e353f;
+  --color-primary: #ff759b;
+  /* --color-text: #2e353f; */
+  --color-text: #3b3235;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
   --color-heading-black: black;
+  --color-black: #141213;
   --color-accent: #d1dce5;
 }
 
@@ -116,4 +118,8 @@ blockquote {
   background: var(--color-accent);
   height: 1px;
   border: 0;
+}
+
+.container {
+  @apply max-w-3xl mx-auto px-8 my-16;
 }

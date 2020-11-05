@@ -20,7 +20,7 @@ const PostCards = ({ posts }) => {
     );
   });
 
-  return <ol className="my-16">{postFrags}</ol>;
+  return <ol className="">{postFrags}</ol>;
 };
 
 PostCards.propTypes = {

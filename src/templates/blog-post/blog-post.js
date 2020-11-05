@@ -12,65 +12,67 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { previous, next } = pageContext;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout title="Blog">
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
         location={location}
         isArticle
       />
-      <article
-        className="blog-post"
-        itemScope
-        itemType="http://schema.org/Article"
-      >
-        <header>
-          <h2 className="blog-post__title" itemProp="headline">
-            {post.frontmatter.title}
-          </h2>
-          <time
-            className="blog-post__date"
-            dateTime={new Date(post.frontmatter.date).toISOString()}
-          >
-            {post.frontmatter.date}
-          </time>
-        </header>
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          className="blog-post__body"
-          itemProp="articleBody"
-        />
-        <hr className="partition" />
-        <footer>
-          <Bio />
-        </footer>
-      </article>
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
+      <section className="container">
+        <article
+          className="blog-post"
+          itemScope
+          itemType="http://schema.org/Article"
         >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+          <header>
+            <h2 className="blog-post__title" itemProp="headline">
+              {post.frontmatter.title}
+            </h2>
+            <time
+              className="blog-post__date"
+              dateTime={new Date(post.frontmatter.date).toISOString()}
+            >
+              {post.frontmatter.date}
+            </time>
+          </header>
+          <section
+            dangerouslySetInnerHTML={{ __html: post.html }}
+            className="blog-post__body"
+            itemProp="articleBody"
+          />
+          <hr className="partition" />
+          <footer>
+            <Bio />
+          </footer>
+        </article>
+        <nav className="blog-post-nav">
+          <ul
+            style={{
+              display: `flex`,
+              flexWrap: `wrap`,
+              justifyContent: `space-between`,
+              listStyle: `none`,
+              padding: 0,
+            }}
+          >
+            <li>
+              {previous && (
+                <Link to={previous.fields.slug} rel="prev">
+                  ← {previous.frontmatter.title}
+                </Link>
+              )}
+            </li>
+            <li>
+              {next && (
+                <Link to={next.fields.slug} rel="next">
+                  {next.frontmatter.title} →
+                </Link>
+              )}
+            </li>
+          </ul>
+        </nav>
+      </section>
     </Layout>
   );
 };

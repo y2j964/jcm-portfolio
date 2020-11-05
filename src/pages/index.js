@@ -2,7 +2,6 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 
-import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 import PostCards from '../components/PostCard/PostCards';
@@ -22,10 +21,11 @@ const BlogIndex = ({ data, location }) => {
   const posts = data.allMarkdownRemark.nodes;
 
   return (
-    <Layout>
+    <Layout title="Welcome">
       <SEO title="All posts" location={location} />
-      <Bio />
-      {posts.length === 0 ? <BlogPostsNone /> : <PostCards posts={posts} />}
+      <section className="container">
+        {posts.length === 0 ? <BlogPostsNone /> : <PostCards posts={posts} />}
+      </section>
     </Layout>
   );
 };

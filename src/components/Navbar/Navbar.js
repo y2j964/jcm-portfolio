@@ -1,34 +1,51 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-const Navbar = props => {
+const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar__item">
-        <a href="/">JCM</a>
+        <Link
+          to="/"
+          className="navbar__link"
+          activeClassName="navbar__link--is-active"
+        >
+          JCM
+        </Link>
       </div>
       <ul className="navbar-secondary-group">
         <li className="navbar__item">
-          <Link className="" to="/">
+          <Link
+            to="/blog"
+            className="navbar__link"
+            activeClassName="navbar__link--is-active"
+          >
             Blog
           </Link>
         </li>
         <li className="navbar__item">
-          <Link className="" to="/">
+          <Link
+            to="/projects"
+            className="navbar__link"
+            activeClassName="navbar__link--is-active"
+          >
             Projects
           </Link>
         </li>
         <li className="navbar__item">
-          <Link className="" to="/">
+          <Link
+            to="/about"
+            className="navbar__link"
+            activeClassName="navbar__link--is-active"
+          >
             About
           </Link>
         </li>
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-Navbar.propTypes = {}
+Navbar.propTypes = {};
 
-export default Navbar
+export default Navbar;
