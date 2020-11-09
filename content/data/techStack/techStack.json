@@ -1,0 +1,62 @@
+[
+  {
+    "text": "JavaScript",
+    "icon": "images/js-logo.png"
+  },
+  {
+    "text": "React JS",
+    "icon": "images/react-logo.png"
+  },
+  {
+    "text": "HTML",
+    "icon": "images/html-logo.png"
+  },
+  {
+    "text": "CSS",
+    "icon": "images/css-logo.png"
+  },
+  {
+    "text": "Post CSS",
+    "icon": "images/postcss-logo-copy.png"
+  },
+  {
+    "text": "Gatsby JS",
+    "icon": "images/gatsby-logo.png"
+  },
+  {
+    "text": "Node JS",
+    "icon": "images/node-logo.png"
+  },
+  {
+    "text": "Redux",
+    "icon": "images/redux-logo.png"
+  },
+  {
+    "text": "Mongo DB",
+    "icon": "images/mongodb-logo.png"
+  },
+  {
+    "text": "Jest JS",
+    "icon": "images/jest-logo.png"
+  },
+  {
+    "text": "Cypress",
+    "icon": "images/cypress-logo.png"
+  },
+  {
+    "text": "Webpack",
+    "icon": "images/webpack-logo.jpg"
+  },
+  {
+    "text": "Eleventy",
+    "icon": "images/11ty-logo.png"
+  },
+  {
+    "text": "Netlify CMS",
+    "icon": "images/netlify-cms-logo.png"
+  },
+  {
+    "text": "Git",
+    "icon": "images/git-logo.png"
+  }
+]

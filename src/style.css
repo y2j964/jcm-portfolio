@@ -2,6 +2,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'components/Banner/banner.css';
+@import 'components/ImgGrid/img-grid.css';
 @import 'components/Footer/footer.css';
 @import 'components/Navbar/navbar.css';
 @import 'components/PostCard/post-card.css';

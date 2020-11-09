@@ -23,6 +23,13 @@ module.exports = {
         name: `assets`,
       },
     },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/data`,
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -72,4 +79,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
