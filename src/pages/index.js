@@ -4,22 +4,9 @@ import PropTypes from 'prop-types';
 
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
-import PostCards from '../components/PostCard/PostCards';
 import ImgGrid from '../components/ImgGrid/ImgGrid';
 
-const BlogPostsNone = () => (
-  <React.Fragment>
-    <h2 className="text-3xl mb-6">No blog posts found</h2>
-    <p>
-      Add markdown posts to &quot;content/blog&quot; (or the directory you
-      specified for the &quot;gatsby-source-filesystem&quot; plugin in
-      gatsby-config.js).
-    </p>
-  </React.Fragment>
-);
-
 const BlogIndex = ({ data, location }) => {
-  const posts = data.allMarkdownRemark.nodes;
   const techStackItems = data.allTechStackJson.edges.map(({ node }) => node);
 
   return (
@@ -43,9 +30,6 @@ const BlogIndex = ({ data, location }) => {
           <a href="#contact">Contact Me</a>
         </div>
       </section>
-      <section className="container">
-        {posts.length === 0 ? <BlogPostsNone /> : <PostCards posts={posts} />}
-      </section>
     </Layout>
   );
 };
@@ -58,23 +42,10 @@ BlogIndex.propTypes = {
 export default BlogIndex;
 
 export const pageQuery = graphql`
-  query {
+  query HomeQuery {
     site {
       siteMetadata {
         title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          description
-        }
       }
     }
     allTechStackJson {
