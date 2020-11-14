@@ -1,5 +1,10 @@
+.footer-wrapper {
+  @apply w-full mt-12;
+  /* background-color: #fff5a2; */
+}
+
 .footer {
-  @apply max-w-screen-xl mx-auto px-4 py-6 mt-10;
+  @apply max-w-screen-xl mx-auto px-4 py-6;
 
   @screen sm {
     @apply px-8;

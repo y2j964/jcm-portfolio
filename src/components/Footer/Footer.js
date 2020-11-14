@@ -17,10 +17,12 @@ const Footer = () => {
   const author = data.site.siteMetadata.author.name;
 
   return (
-    <footer className="footer">
-      <p className="footer__copyright">
-        Copyright © {new Date().getFullYear()} {author}. All Rights Reserved
-      </p>
+    <footer className="footer-wrapper">
+      <div className="footer">
+        <p className="footer__copyright">
+          Copyright © {new Date().getFullYear()} {author}. All Rights Reserved
+        </p>
+      </div>
     </footer>
   );
 };
