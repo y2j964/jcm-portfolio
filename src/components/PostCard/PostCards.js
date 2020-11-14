@@ -10,13 +10,14 @@ const PostCards = ({ posts }) => {
     const { slug } = post.fields;
 
     return (
-      <PostCard
-        title={title}
-        description={description}
-        date={date}
-        slug={slug}
-        key={slug}
-      />
+      <li key={slug}>
+        <PostCard
+          title={title}
+          description={description}
+          date={date}
+          slug={slug}
+        />
+      </li>
     );
   });
 

@@ -7,10 +7,12 @@ import SEO from '../components/Seo';
 import ProjectCard from '../components/ProjectCard/ProjectCard';
 
 import ImgGrid from '../components/ImgGrid/ImgGrid';
+import PostCard from '../components/PostCard/PostCard';
 
 const BlogIndex = ({ data, location }) => {
   const techStackItems = data.allTechStackJson.edges.map(({ node }) => node);
   const featuredProject = data.projectsJson;
+  const featuredPost = data.markdownRemark;
 
   return (
     <Layout title="Welcome">
@@ -45,6 +47,17 @@ const BlogIndex = ({ data, location }) => {
           docsLink={featuredProject.docsLink}
           siteLink={featuredProject.siteLink}
           image={featuredProject.image.childImageSharp.fluid}
+        />
+      </section>
+      <section className="container partition-bottom">
+        <h2 className="text-4xl font-light mb-6 text-center">
+          Featured Blog Post
+        </h2>
+        <PostCard
+          title={featuredPost.frontmatter.title}
+          date={featuredPost.frontmatter.date}
+          description={featuredPost.frontmatter.description}
+          slug={featuredPost.fields.slug}
         />
       </section>
     </Layout>
@@ -90,6 +103,16 @@ export const pageQuery = graphql`
             ...GatsbyImageSharpFluid_withWebp_noBase64
           }
         }
+      }
+    }
+    markdownRemark(fields: { slug: { eq: "/new-beginnings/" } }) {
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+        date(formatString: "MMMM DD, YYYY")
+        description
       }
     }
   }
