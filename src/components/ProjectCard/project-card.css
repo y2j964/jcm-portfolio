@@ -1,0 +1,36 @@
+.project-cards-list {
+  @apply mb-4;
+  &__item {
+    &:not(:last-child) {
+      @apply mb-32;
+    }
+  }
+}
+
+.project-card {
+  @apply mt-16;
+
+  &__title {
+    @apply text-3xl mb-3 text-center;
+  }
+
+  &--primary {
+    .project-card__title {
+      color: var(--color-primary);
+    }
+  }
+
+  &--accent {
+    .project-card__title {
+      color: var(--color-accent);
+    }
+  }
+
+  &__img {
+    filter: grayscale(1);
+  }
+
+  &__body {
+    @apply text-center my-5;
+  }
+}

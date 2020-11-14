@@ -1,0 +1,30 @@
+[
+  {
+    "title": "NetStruck",
+    "description": "A ReactJS single-page application patterned after the UI of The Criterion Channel with some additional UX influence from Netflix. Like Netflix, you can browse through a catalog of films and add films to your personalized list, which persists via local storage.",
+    "siteLink": "https://y2j964.github.io/netStruck/",
+    "docsLink": "https://github.com/y2j964/netStruck",
+    "image": "../../assets/netstruck.png"
+  },
+  {
+    "title": "MERN CRUD Blog",
+    "description": "A MERN application where authenticated users can create, edit, and delete blog posts.",
+    "siteLink": "https://pure-peak-10557.herokuapp.com/",
+    "docsLink": "https://github.com/y2j964/mern_crud_blog",
+    "image": "../../assets/mern-crud-blog.png"
+  },
+  {
+    "title": "Seinfeld Trivia Game",
+    "description": "A Who Wants to be a Millionaire inspired trivia game that tests your knowledge of Seinfeld quotes.",
+    "siteLink": "https://y2j964.github.io/SeinfeldTriviaGame/",
+    "docsLink": "https://github.com/y2j964/SeinfeldTriviaGame",
+    "image": "../../assets/seinfeld-trivia-game.png"
+  },
+  {
+    "title": "The Shallot",
+    "description": "A humorously fictitious news media webpage I created in the vein of The Onion.",
+    "siteLink": "https://y2j964.github.io/theShallot/",
+    "docsLink": "https://github.com/y2j964/theShallot",
+    "image": "../../assets/the-shallot.png"
+  }
+]
