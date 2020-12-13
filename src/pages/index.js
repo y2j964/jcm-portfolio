@@ -105,7 +105,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    markdownRemark(fields: { slug: { eq: "/new-beginnings/" } }) {
+    markdownRemark(fields: { slug: { eq: "/footnote-tooltip/" } }) {
       fields {
         slug
       }
