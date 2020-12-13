@@ -27,7 +27,7 @@ const BlogIndex = ({ data, location }) => {
         <p className="mb-8">
           My name is Justin Mooney. I am a coder, as in, I write code. I
           specifically am specialized in frontend development and all things
-          JavaScript.
+          JavaScript. I am currently looking for work.
         </p>
         <h3 className="text-4xl font-light mt-16 mb-6 text-center">
           Here are some technologies I tool around with:

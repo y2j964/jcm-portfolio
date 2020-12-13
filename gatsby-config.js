@@ -3,7 +3,7 @@ module.exports = {
     title: `Justin Mooney Portfolio`,
     author: {
       name: `Justin Mooney`,
-      summary: `software engineer with concentration in Javascript`,
+      summary: `software engineer with a concentration in Javascript. He is currently looking for work.`,
     },
     description: `A portfolio showcasing Justin Mooney's software engineer work`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
