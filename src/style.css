@@ -121,14 +121,6 @@ blockquote {
   border-bottom: 1px solid #d1dce5;
 }
 
-.partitionJ {
-  /* @apply px-8;
-  max-width: 48rem; */
-  background: #d1dce5;
-  height: 1px;
-  border: 0;
-}
-
 .container {
   @apply max-w-3xl mx-auto px-8 py-16;
 }
