@@ -1,7 +1,7 @@
 .blog-post {
   &__title {
-    @apply mb-4 mt-0 font-black text-5xl;
-    color: var(--color-heading);
+    @apply mb-4 mt-0 text-3xl font-light;
+    color: var(--color-primary);
   }
 
   &__date {
@@ -16,7 +16,9 @@
   }
 
   &__body ul,
-  &__body ol {
+  &__body ol,
+  &__body video,
+  &__body pre[class*='language-'] {
     @apply mb-8;
   }
 
@@ -41,7 +43,7 @@
   &__body h4,
   &__body h5,
   &__body h6 {
-    @apply mt-12 mb-6;
+    @apply mt-12 mb-6 font-light;
   }
 
   &__body h2 {
@@ -65,6 +67,6 @@
   }
 
   &__body a {
-    color: var(--color-primary);
+    color: var(--color-accent);
   }
 }
