@@ -44,9 +44,9 @@ const Bio = () => {
         />
       )}
       {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong>. {author.name} is a{' '}
-          {author?.summary || null}
+        <p className="bio__text">
+          Written by <span className="font-semibold">{author.name}</span>.{' '}
+          {author.name} is a {author?.summary || null}
         </p>
       )}
     </div>

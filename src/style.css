@@ -110,6 +110,11 @@ blockquote {
 
 .bio {
   @apply flex my-16 max-w-2xl mx-auto;
+
+  &__text {
+    color: var(--color-text);
+    font-family: var(--font-heading);
+  }
 }
 
 .bio-avatar {
