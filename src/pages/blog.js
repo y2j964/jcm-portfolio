@@ -23,7 +23,7 @@ const Blog = ({ data, location }) => {
       <SEO title="Blog" location={location} />
       <section className="container">
         <h2 className="text-3xl sm:text-4xl font-light text-center">
-          Some things I have written
+          Hot off the Press
         </h2>
         {posts.length === 0 ? <BlogPostsNone /> : <PostCards posts={posts} />}
       </section>
