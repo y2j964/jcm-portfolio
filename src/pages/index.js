@@ -19,7 +19,7 @@ const BlogIndex = ({ data, location }) => {
       <SEO title="All posts" location={location} />
       <section className="container partition-bottom">
         <h2 className="text-3xl sm:text-4xl font-light mb-6 text-center">
-          Allow me to introduce myself
+          Allow Me To Introduce Myself
         </h2>
         {/* <div className="flex justify-center">
           <Image fixed={avatar} alt="Justin Mooney" />
@@ -30,7 +30,7 @@ const BlogIndex = ({ data, location }) => {
           JavaScript. I am currently looking for work.
         </p>
         <h3 className="text-2xl sm:text-3xl font-light mt-16 mb-12 text-center">
-          Here are some technologies I tool around with
+          Here Are Some Technologies I Tool Around With
         </h3>
         <ImgGrid gridItems={techStackItems} />
       </section>
