@@ -23,18 +23,20 @@ const ProjectCard = ({
 
   return (
     <article className={`project-card ${projectCardClass}`}>
-      <header className="">
+      <div className="project-card__text-container">
         <h3 className="project-card__title">{title}</h3>
-      </header>
-      <Image fluid={image} alt={title} className="project-card__img" />
-      <p className="project-card__body">{description}</p>
-      <div className="flex justify-center">
-        <a className={`btn ${btnClass}`} href={siteLink}>
-          Live Site
-        </a>
-        <a className={`btn ${btnClass}`} href={docsLink}>
-          Docs
-        </a>
+        <p className="project-card__body">{description}</p>
+        <div className="flex">
+          <a className={`btn ${btnClass}`} href={siteLink}>
+            Live Site
+          </a>
+          <a className={`btn ${btnClass}`} href={docsLink}>
+            Docs
+          </a>
+        </div>
+      </div>
+      <div className="project-card__img-container">
+        <Image fluid={image} alt={title} className="project-card__img" />
       </div>
     </article>
   );
