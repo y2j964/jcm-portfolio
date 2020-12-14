@@ -146,12 +146,6 @@ blockquote {
     min-width: 7rem;
   }
 
-  &:hover {
-    background-color: var(--color-accent);
-    border: 1px solid var(--color-accent);
-    color: white;
-  }
-
   &:not(:last-child) {
     @apply mr-4;
   }
@@ -162,7 +156,7 @@ blockquote {
 
     &:hover {
       background-color: var(--color-primary);
-      border: 1px solid var(--color-primary);
+      border: 2px solid var(--color-primary);
       color: white;
     }
   }
@@ -173,7 +167,7 @@ blockquote {
 
     &:hover {
       background-color: var(--color-accent);
-      border: 1px solid var(--color-accent);
+      border: 2px solid var(--color-accent);
       color: white;
     }
   }
