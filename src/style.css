@@ -113,7 +113,7 @@ blockquote {
 }
 
 .bio {
-  @apply flex my-16 max-w-2xl mx-auto;
+  @apply flex mt-16 max-w-2xl mx-auto;
 
   &__text {
     color: var(--color-text);
