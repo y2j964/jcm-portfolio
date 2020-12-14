@@ -30,7 +30,7 @@ const Banner = ({ title }) => {
 };
 
 Banner.propTypes = {
-  title: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default Banner;
