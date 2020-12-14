@@ -29,13 +29,10 @@ const BlogIndex = ({ data, location }) => {
           specifically am specialized in frontend development and all things
           JavaScript. I am currently looking for work.
         </p>
-        <h3 className="text-4xl font-light mt-16 mb-6 text-center">
-          Here are some technologies I tool around with:
+        <h3 className="text-3xl font-light mt-16 mb-12 text-center">
+          Here are some technologies I tool around with
         </h3>
         <ImgGrid gridItems={techStackItems} />
-        <div className="my-12">
-          <a href="#contact">Contact Me</a>
-        </div>
       </section>
       <section className="container partition-bottom">
         <h2 className="text-4xl font-light mb-6 text-center">

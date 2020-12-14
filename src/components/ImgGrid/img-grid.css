@@ -1,17 +1,10 @@
 .img-grid {
-  @apply grid grid-cols-3 gap-2;
+  @apply grid grid-cols-4 gap-2 max-w-lg mx-auto;
+  filter: grayscale(1);
 
   @screen xs {
-    @apply grid-cols-4;
-  }
-
-  @screen sm {
     @apply grid-cols-5;
   }
-
-  /* @screen lg {
-    @apply grid-cols-6;
-  } */
 
   .gatsby-image-wrapper {
     @apply h-full w-full;
