@@ -2,17 +2,26 @@
   &__title {
     @apply mb-4 mt-0 text-3xl font-light;
     color: var(--color-primary);
+    @screen sm {
+      @apply text-4xl;
+    }
   }
 
   &__date {
-    @apply text-xl mb-8 block mt-8;
+    @apply text-lg mb-8 block mt-8;
     font-family: var(--font-heading);
+    @screen sm {
+      @apply text-xl;
+    }
   }
 
   /* for injected markup */
   &__body p {
-    @apply leading-relaxed mb-8 text-lg;
+    @apply leading-relaxed mb-8 text-base;
     font-family: var(--font-heading);
+    @screen sm {
+      @apply text-lg;
+    }
   }
 
   &__body ul,

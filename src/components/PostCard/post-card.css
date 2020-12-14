@@ -6,11 +6,18 @@
   }
 
   &__title {
-    @apply text-2xl mb-2;
+    @apply text-xl mb-2;
     color: var(--color-primary);
+
+    @screen sm {
+      @apply text-2xl;
+    }
   }
 
   &__description {
-    @apply mb-8;
+    @apply mb-8 text-base;
+    @screen sm {
+      @apply text-lg;
+    }
   }
 }

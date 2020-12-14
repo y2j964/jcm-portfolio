@@ -11,7 +11,9 @@ const Projects = ({ data, location }) => {
     <Layout title="Projects">
       <SEO title="Projects" location={location} />
       <section className="container">
-        <h2 className="text-4xl font-light text-center">Projects</h2>
+        <h2 className="text-3xl sm:text-4xl font-light text-center">
+          Projects
+        </h2>
         <ProjectCards projects={projects} />
       </section>
     </Layout>

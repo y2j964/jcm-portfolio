@@ -8,7 +8,9 @@ const About = ({ location }) => {
     <Layout title="About Me">
       <SEO title="About Me" location={location} />
       <section className="container">
-        <h2 className="text-4xl mb-8 font-light">Who Am I?</h2>
+        <h2 className="text-3xl sm:text-4xl mb-8 font-light text-center">
+          Who Am I?
+        </h2>
         <p className="mb-8">
           Do you still feel like you don&#39;t know me? I feel like you really
           ought to know me by now. Or maybe not. You don&#39;t live in my head.

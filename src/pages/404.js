@@ -12,7 +12,9 @@ const NotFoundPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="404: Not Found" />
       <section className="container">
-        <h2>404: Not Found</h2>
+        <h2 className="text-3xl sm:text-4xl mb-8 font-light text-center">
+          404: Not Found
+        </h2>
         <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
       </section>
     </Layout>

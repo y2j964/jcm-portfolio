@@ -50,7 +50,11 @@
   }
 
   &__title {
-    @apply text-2xl mb-3;
+    @apply text-xl mb-3;
+
+    @screen sm {
+      @apply text-2xl;
+    }
   }
 
   &--primary {
@@ -71,6 +75,9 @@
   }
 
   &__body {
-    @apply my-5 text-base;
+    @apply my-5 text-sm;
+    @screen sm {
+      @apply text-base;
+    }
   }
 }

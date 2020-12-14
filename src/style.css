@@ -85,7 +85,10 @@ h6 {
 } */
 
 p {
-  @apply leading-relaxed text-lg;
+  @apply leading-relaxed text-base;
+  @screen sm {
+    @apply text-lg;
+  }
 }
 
 blockquote {

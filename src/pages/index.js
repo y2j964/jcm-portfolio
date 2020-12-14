@@ -18,7 +18,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout title="Welcome">
       <SEO title="All posts" location={location} />
       <section className="container partition-bottom">
-        <h2 className="text-4xl font-light mb-6 text-center">
+        <h2 className="text-3xl sm:text-4xl font-light mb-6 text-center">
           Allow me to introduce myself
         </h2>
         {/* <div className="flex justify-center">
@@ -29,13 +29,13 @@ const BlogIndex = ({ data, location }) => {
           specifically am specialized in frontend development and all things
           JavaScript. I am currently looking for work.
         </p>
-        <h3 className="text-3xl font-light mt-16 mb-12 text-center">
+        <h3 className="text-2xl sm:text-3xl font-light mt-16 mb-12 text-center">
           Here are some technologies I tool around with
         </h3>
         <ImgGrid gridItems={techStackItems} />
       </section>
       <section className="container partition-bottom">
-        <h2 className="text-4xl font-light mb-6 text-center">
+        <h2 className="text-3xl sm:text-4xl font-light mb-6 text-center">
           Featured Project
         </h2>
         <ProjectCard
@@ -47,7 +47,7 @@ const BlogIndex = ({ data, location }) => {
         />
       </section>
       <section className="container partition-bottom">
-        <h2 className="text-4xl font-light mb-6 text-center">
+        <h2 className="text-3xl sm:text-4xl font-light mb-6 text-center">
           Featured Blog Post
         </h2>
         <PostCard
