@@ -4,6 +4,8 @@ module.exports = {
     author: {
       name: `Justin Mooney`,
       summary: `software engineer with a concentration in Javascript. He is currently looking for work.`,
+      github: `https://github.com/y2j964`,
+      linkedIn: `https://www.linkedin.com/in/justin-mooney-306683111/`,
     },
     description: `A portfolio showcasing Justin Mooney's software engineer work`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
@@ -58,7 +60,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        // trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
     `gatsby-plugin-feed`,
