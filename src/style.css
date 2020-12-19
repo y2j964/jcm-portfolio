@@ -5,13 +5,14 @@
 @import './base.css';
 @import './btn.css';
 @import './miscellaneous.css';
+@import './prism.css';
+@import 'components/Bio/bio.css';
 @import 'components/Banner/banner.css';
 @import 'components/ImgGrid/img-grid.css';
 @import 'components/Footer/footer.css';
 @import 'components/Navbar/navbar.css';
 @import 'components/PostCard/post-card.css';
 @import 'components/ProjectCard/project-card.css';
-@import './prism.css';
 @import 'templates/blog-post/blog-post.css';
 /* purgecss end ignore */
 @import 'tailwindcss/utilities';
