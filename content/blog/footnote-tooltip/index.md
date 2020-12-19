@@ -11,7 +11,7 @@ At bare minimum, there should be a scrolling mechanism between the superscript a
 But I want to urge you, Traveler, that we should be doing more. I specifically want to talk about tooltips and their place in this quandary. Our endpoint will look like this.
 
 <video autoplay loop muted playsinline>
-  <source src="../../assets/footnotes-tooltip-smart.mp4" type="video/mp4">
+  <source src="footnotes-tooltip-smart.mp4" type="video/mp4">
 </video>
 
 [(Here’s the code if you just want to jump to the end.)](https://codepen.io/y2j964/pen/bGezojQ)
@@ -61,7 +61,7 @@ Cool. So let’s do that.
 Now we can jump between the superscript and the footnote. [Here is a more fleshed-out illustration of that](https://codepen.io/y2j964/pen/ZEpBKOp).
 
 <video autoplay loop muted playsinline>
-  <source src="../../assets/footnotes-markdown-it.mp4" type="video/mp4">
+  <source src="footnotes-markdown-it.mp4" type="video/mp4">
 </video>
 
 This is the least we could do. And we did it. Yay?
@@ -151,7 +151,7 @@ Having global state is sometimes helpful. But it can still cause problems of con
 OK, we're back, and there is a UX problem with our previous attempt. If the superscript is, for example, at the right edge of the screen and the screenWidth is already compressed, the tooltip has no room to expand but beyond the screen, creating an overflow and an ungainly horizontal scrollbar.
 
 <video autoplay loop muted playsinline>
-  <source src="../../assets/footnotes-tooltip-basic.mp4" type="video/mp4">
+  <source src="footnotes-tooltip-basic.mp4" type="video/mp4">
 </video>
 
 If you noodle around with the Wikipedia tooltip, you will observe that Wikipedia does not always display them to the top-right of the superscript. They will display the tooltip in the most logical placement to prevent snafus like the one mentioned above.
