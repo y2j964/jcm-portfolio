@@ -1,11 +1,11 @@
 html {
   @apply leading-normal;
+  font-family: var(--font-heading);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  font-family: var(--font-body);
   color: var(--color-text);
 }
 
