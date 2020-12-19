@@ -1,11 +1,11 @@
 /* purgecss start ignore */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
-@import './variables.css';
-@import './base.css';
-@import './btn.css';
-@import './miscellaneous.css';
-@import './prism.css';
+@import './abstract_styles/variables.css';
+@import './abstract_styles/base.css';
+@import './abstract_styles/btn.css';
+@import './abstract_styles/miscellaneous.css';
+@import './abstract_styles/prism.css';
 @import 'components/Bio/bio.css';
 @import 'components/Banner/banner.css';
 @import 'components/ImgGrid/img-grid.css';
