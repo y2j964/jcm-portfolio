@@ -5,3 +5,19 @@
 .container {
   @apply max-w-3xl mx-auto px-8 py-16;
 }
+
+.section-title {
+  @apply text-3xl font-light text-center;
+
+  @screen sm {
+    @apply text-4xl;
+  }
+
+  &--sm {
+    @apply text-2xl;
+
+    @screen sm {
+      @apply text-3xl;
+    }
+  }
+}

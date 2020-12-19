@@ -18,9 +18,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout title="Welcome">
       <SEO title="All posts" location={location} />
       <section className="container partition-bottom">
-        <h2 className="text-3xl sm:text-4xl font-light mb-6 text-center">
-          Allow Me To Introduce Myself
-        </h2>
+        <h2 className="section-title mb-6">Allow Me To Introduce Myself</h2>
         {/* <div className="flex justify-center">
           <Image fixed={avatar} alt="Justin Mooney" />
         </div> */}
@@ -29,15 +27,13 @@ const BlogIndex = ({ data, location }) => {
           specifically am specialized in frontend development and all things
           JavaScript. I am currently looking for work.
         </p>
-        <h3 className="text-2xl sm:text-3xl font-light mt-16 mb-12 text-center">
+        <h3 className="section-title section-title--sm mt-16 mb-12">
           Here Are Some Technologies I Tool Around With
         </h3>
         <ImgGrid gridItems={techStackItems} />
       </section>
       <section className="container partition-bottom">
-        <h2 className="text-3xl sm:text-4xl font-light mb-6 text-center">
-          Featured Project
-        </h2>
+        <h2 className="section-title mb-6">Featured Project</h2>
         <ProjectCard
           title={featuredProject.title}
           description={featuredProject.description}
@@ -47,9 +43,7 @@ const BlogIndex = ({ data, location }) => {
         />
       </section>
       <section className="container partition-bottom">
-        <h2 className="text-3xl sm:text-4xl font-light mb-6 text-center">
-          Featured Blog Post
-        </h2>
+        <h2 className="section-title mb-6">Featured Blog Post</h2>
         <PostCard
           title={featuredPost.frontmatter.title}
           date={featuredPost.frontmatter.date}

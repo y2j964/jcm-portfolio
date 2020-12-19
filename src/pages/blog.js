@@ -7,7 +7,7 @@ import SEO from '../components/seo';
 
 const BlogPostsNone = () => (
   <React.Fragment>
-    <h2 className="text-3xl sm:text-4xl mb-6">No blog posts found</h2>
+    <h2 className="section-title mb-6">No blog posts found</h2>
     <p>
       Add markdown posts to &quot;content/blog&quot; (or the directory you
       specified for the &quot;gatsby-source-filesystem&quot; plugin in
@@ -22,9 +22,7 @@ const Blog = ({ data, location }) => {
     <Layout title="Blog">
       <SEO title="Blog" location={location} />
       <section className="container">
-        <h2 className="text-3xl sm:text-4xl font-light text-center">
-          Hot Off The Press
-        </h2>
+        <h2 className="section-title">Hot Off The Press</h2>
         {posts.length === 0 ? <BlogPostsNone /> : <PostCards posts={posts} />}
       </section>
     </Layout>
