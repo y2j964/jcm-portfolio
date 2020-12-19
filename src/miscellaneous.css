@@ -1,0 +1,7 @@
+.partition-bottom {
+  border-bottom: 1px solid #d1dce5;
+}
+
+.container {
+  @apply max-w-3xl mx-auto px-8 py-16;
+}

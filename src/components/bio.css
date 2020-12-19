@@ -1,0 +1,13 @@
+.bio {
+  @apply flex mt-16 max-w-2xl mx-auto;
+
+  &__text {
+    color: var(--color-text);
+    font-family: var(--font-heading);
+  }
+}
+
+.bio-avatar {
+  @apply mr-4 rounded-full;
+  min-width: 50px;
+}

@@ -1,0 +1,57 @@
+html {
+  @apply leading-normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+}
+
+main {
+  @apply w-full;
+  flex: 1 1 auto;
+  /* ensure that footer doesn't creep up the page if there isn't much content within main */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply leading-tight;
+  font-family: var(--font-heading);
+  letter-spacing: -0.025em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* @apply font-bold; */
+  color: var(--color-primary);
+}
+
+p {
+  @apply leading-relaxed text-base;
+  @screen sm {
+    @apply text-lg;
+  }
+}
+
+blockquote {
+  @apply pl-6 mr-8 -ml-6 mb-8 italic border-l-4 text-xl;
+  color: var(--color-text-light);
+  border-color: var(--color-primary);
+
+  & > :last-child {
+    @apply mb-0;
+  }
+  & > ul,
+  & > ol {
+    list-style-position: inside;
+  }
+}

@@ -1,0 +1,39 @@
+.btn {
+  @apply px-4 py-2 text-center border-solid border-2;
+  min-width: 6rem;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out,
+    border-color 200ms ease-in-out;
+
+  @screen sm {
+    min-width: 7rem;
+  }
+
+  &:not(:last-child) {
+    @apply mr-4;
+  }
+
+  &--primary {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+
+    &:hover {
+      background-color: var(--color-primary);
+      border: 2px solid var(--color-primary);
+      color: white;
+    }
+  }
+
+  &--accent {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+
+    &:hover {
+      background-color: var(--color-accent);
+      border: 2px solid var(--color-accent);
+      color: white;
+    }
+  }
+}

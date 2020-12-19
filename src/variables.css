@@ -1,0 +1,17 @@
+:root {
+  --fontFamily-sans: Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --fontFamily-serif: 'Merriweather', 'Georgia', Cambria, 'Times New Roman',
+    Times, serif;
+  --font-body: var(--fontFamily-serif);
+  --font-heading: var(--fontFamily-sans);
+  --color-primary: #ff759b;
+  /* --color-text: #2e353f; */
+  --color-text: #3b3235;
+  --color-text-light: #4f5969;
+  --color-heading: #1a202c;
+  --color-heading-black: black;
+  --color-black: #141213;
+  --color-accent: #fbdc18;
+}
