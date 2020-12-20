@@ -33,6 +33,20 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: 'Montserrat',
+              variants: ['300', '400'],
+              fontDisplay: 'block',
+            },
+          ],
+        },
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
