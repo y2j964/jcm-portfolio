@@ -27,6 +27,7 @@
   &__body ul,
   &__body ol,
   &__body video,
+  &__body table,
   &__body pre[class*='language-'] {
     @apply mb-8;
   }
@@ -77,5 +78,9 @@
 
   &__body a {
     color: var(--color-accent);
+  }
+
+  &__nav {
+    @apply mb-12;
   }
 }

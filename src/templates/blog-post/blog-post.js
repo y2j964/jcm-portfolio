@@ -46,7 +46,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             <Bio />
           </footer>
         </article>
-        <nav className="blog-post-nav">
+        <nav className="blog-post-nav mt-12">
           <ul
             style={{
               display: `flex`,
