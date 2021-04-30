@@ -1,12 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "jcm-portfolio",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "A portfolio showcasing Justin Mooney's software engineer work",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "Justin Mooney <justin.mooney.carmen@gmail.com>",
   "dependencies": {
     "babel-plugin-prismjs": "^2.0.1",
     "gatsby": "^2.24.85",
