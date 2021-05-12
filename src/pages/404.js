@@ -9,11 +9,11 @@ const NotFoundPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={'JCM Portfolio'}>
       <SEO title="404: Not Found" location={location} />
       <section className="container">
         <h2 className="section-title mb-8">404: Not Found</h2>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+        <p>Would you believe it! This route doesn&#39;t exist. Shucks.</p>
       </section>
     </Layout>
   );
