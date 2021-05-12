@@ -5,9 +5,7 @@ import PropTypes from 'prop-types';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const NotFoundPage = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title;
-
+const NotFoundPage = ({ location }) => {
   return (
     <Layout location={location} title={'JCM Portfolio'}>
       <SEO title="404: Not Found" location={location} />
