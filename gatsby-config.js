@@ -8,7 +8,7 @@ module.exports = {
       linkedIn: `https://www.linkedin.com/in/justin-mooney-306683111/`,
     },
     description: `A portfolio showcasing Justin Mooney's software engineer work`,
-    siteUrl: `https://sleepy-villani-cf0ac0.netlify.app/`,
+    siteUrl: `https://sleepy-villani-cf0ac0.netlify.app`,
   },
   plugins: [
     {
