@@ -13,10 +13,19 @@ const BlogIndex = ({ data, location }) => {
   const techStackItems = data.allTechStackJson.edges.map(({ node }) => node);
   const featuredProject = data.projectsJson;
   const featuredPost = data.markdownRemark;
+  const { googleSiteVerification } = data.site.siteMetadata;
+  const googleSiteVerificationObj = {
+    name: 'google-site-verification',
+    content: googleSiteVerification,
+  };
 
   return (
     <Layout title="Welcome">
-      <SEO title="All posts" location={location} />
+      <SEO
+        title="All posts"
+        location={location}
+        meta={googleSiteVerificationObj}
+      />
       <section className="container partition-bottom">
         <h2 className="section-title mb-6">Allow Me To Introduce Myself</h2>
         {/* <div className="flex justify-center">
@@ -67,6 +76,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        googleSiteVerification
       }
     }
     allTechStackJson {

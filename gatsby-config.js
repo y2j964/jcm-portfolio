@@ -9,6 +9,7 @@ module.exports = {
     },
     description: `A portfolio showcasing Justin Mooney's software engineer work`,
     siteUrl: `https://sleepy-villani-cf0ac0.netlify.app`,
+    googleSiteVerification: `-R2Ca8vugorOBuTJ9zlAVzRKjpPTcLK3DSKpZW2OyBE`,
   },
   plugins: [
     {
