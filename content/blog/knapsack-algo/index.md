@@ -1,5 +1,5 @@
 ---
-title: Knapsack Algorithm
+title: What's in the Bag?
 date: '2021-01-10T04:27:55.990Z'
 description: A deconstruction of the classic knapsack algorithm problem
 ---
