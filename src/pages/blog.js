@@ -18,9 +18,12 @@ const BlogPostsNone = () => (
 
 const Blog = ({ data, location }) => {
   const posts = data.allMarkdownRemark.nodes;
+  const author = data.site.siteMetadata.author.name;
+  const pageDescription = `Software development blog posts by ${author}`;
+
   return (
     <Layout title="Blog">
-      <SEO title="Blog" location={location} />
+      <SEO title="Blog" location={location} description={pageDescription} />
       <section className="container">
         <h2 className="section-title">Hot Off The Press</h2>
         {posts.length === 0 ? <BlogPostsNone /> : <PostCards posts={posts} />}
@@ -41,6 +44,9 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        author {
+          name
+        }
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {

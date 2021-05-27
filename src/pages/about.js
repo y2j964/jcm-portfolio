@@ -1,12 +1,16 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const About = ({ location }) => {
+const About = ({ data, location }) => {
+  const author = data.site.siteMetadata.author.name;
+  const pageDescription = `Background information about ${author}`;
+
   return (
     <Layout title="About Me">
-      <SEO title="About Me" location={location} />
+      <SEO title="About Me" description={pageDescription} location={location} />
       <section className="container">
         <h2 className="section-title mb-8">Who Am I?</h2>
         <p className="mb-8">
@@ -63,6 +67,19 @@ const About = ({ location }) => {
 
 About.propTypes = {
   location: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired,
 };
 
 export default About;
+
+export const pageQuery = graphql`
+  query AboutQuery {
+    site {
+      siteMetadata {
+        author {
+          name
+        }
+      }
+    }
+  }
+`;

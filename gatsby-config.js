@@ -7,7 +7,7 @@ module.exports = {
       github: `https://github.com/y2j964`,
       linkedIn: `https://www.linkedin.com/in/justin-mooney-306683111/`,
     },
-    description: `A portfolio showcasing Justin Mooney's software engineer work`,
+    description: `Justin Mooney is a software developer who specializes in frontend development and all things JavaScript`,
     siteUrl: `https://sleepy-villani-cf0ac0.netlify.app`,
     googleSiteVerification: `-R2Ca8vugorOBuTJ9zlAVzRKjpPTcLK3DSKpZW2OyBE`,
   },

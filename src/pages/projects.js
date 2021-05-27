@@ -7,9 +7,12 @@ import ProjectCards from '../components/ProjectCard/ProjectCards';
 
 const Projects = ({ data, location }) => {
   const projects = data.allProjectsJson.edges.map(({ node }) => node);
+  const author = data.site.siteMetadata.author.name;
+  const pageDescription = `A collection of ${author}'s software development side projects`;
+
   return (
     <Layout title="Projects">
-      <SEO title="Projects" location={location} />
+      <SEO title="Projects" description={pageDescription} location={location} />
       <section className="container">
         <h2 className="section-title">Fruits Of Labor</h2>
         <ProjectCards projects={projects} />
@@ -27,6 +30,13 @@ export default Projects;
 
 export const pageQuery = graphql`
   query AllProjectsQuery {
+    site {
+      siteMetadata {
+        author {
+          name
+        }
+      }
+    }
     allProjectsJson {
       edges {
         node {

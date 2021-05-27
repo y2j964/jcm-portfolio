@@ -1,7 +1,7 @@
 ---
 title: Knapsack Algorithm
-date: "2021-01-10T04:27:55.990Z"
-description: My approach to the classic knapsack algorithm problem
+date: '2021-01-10T04:27:55.990Z'
+description: A deconstruction of the classic knapsack algorithm problem
 ---
 
 As a self-taught programmer, I feel that there is an assumption that us coding autodidacts have no knowledge of data structures and algorithms, as if this knowledge can only be acquired through secret societies in select universities. This, of course, is utter bosh. It's not hard to access this information. I've read that [Gayle Laakmann McDowell book](https://www.crackingthecodinginterview.com/). I've watched the [youtube videos](https://www.youtube.com/c/BackToBackSWE/videos). And I've passed every coding test I've ever taken.
@@ -127,7 +127,7 @@ for i in range(1, val_arr_size + 1):
 
 Let's walk through what we are calculating here. For the second row, we are asking, "Is the weight of item1 less than OR equal to the incremented capacity?" Since item1's weight is 1, and the incremented capacity starts at 0, the answer is no. We can't take the item, which means we go up to the previous row (which doesn't included the item we didn't take), and take that value. Why are we taking that value? Because we want the max value, and we've already calculated the max value in the circumstance in which we don't take this item. So we keep 0 here.
 
-When our incremented weight goes to 1, we pass the condition (1 is less than or equal to 1). But just because we can take the item, doesn't necessarily mean we should. Remember we want the max value, and the max value might not include this item. In order to determine the max value, we need to compare the value we get by not taking the item (T[i - 1][incremented_capacity]) to the sum of the value of the item we are taking (val\_arr[i – 1]) and the max value of our remaining knapsack capacity and item options (T[i - 1][incremented\_capacity - wt\_arr[i - 1]]).
+When our incremented weight goes to 1, we pass the condition (1 is less than or equal to 1). But just because we can take the item, doesn't necessarily mean we should. Remember we want the max value, and the max value might not include this item. In order to determine the max value, we need to compare the value we get by not taking the item (T[i - 1][incremented_capacity]) to the sum of the value of the item we are taking (val_arr[i – 1]) and the max value of our remaining knapsack capacity and item options (T[i - 1]incremented_capacity - wt_arr[i - 1]]).
 
 That latter case is fairly dense so let's break it down. We are taking a sum of those two values, because there might be leftover capacity in our bag after we take this item, and we should maximize value for that leftover capacity given the item options that don’t include the item we just took. Since we already calculated that value, all we have to do is reference our table.
 
@@ -303,7 +303,7 @@ At this juncture, I’m going to fast forward and show you what the table looks 
 
 Our answer will be in the last cell of the last row, which in this case will be 22. So we just return that last cell, and we can split this joint.
 
-Yeah, it’s a lot. I know. But compared to the brute force approach, it is much cleaner. Our time complexity is O(number of items * knapsack capacity), as is our space complexity. And it actually doesn’t require much code to write this. Take a look at what we have:
+Yeah, it’s a lot. I know. But compared to the brute force approach, it is much cleaner. Our time complexity is O(number of items \* knapsack capacity), as is our space complexity. And it actually doesn’t require much code to write this. Take a look at what we have:
 
 ```python
 def knapSack(capacity, wt_arr, val_arr):
