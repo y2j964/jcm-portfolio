@@ -21,11 +21,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout title="Welcome">
-      <SEO
-        title="All posts"
-        location={location}
-        meta={googleSiteVerificationObj}
-      />
+      <SEO title="" location={location} meta={googleSiteVerificationObj} />
       <section className="container partition-bottom">
         <h2 className="section-title mb-6">Allow Me To Introduce Myself</h2>
         {/* <div className="flex justify-center">

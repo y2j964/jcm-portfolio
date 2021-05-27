@@ -98,6 +98,7 @@ const SEO = ({
       }}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      defaultTitle={defaultTitle}
       meta={metaProps.concat(meta)}
     />
   );
